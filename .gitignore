@@ -71,3 +71,5 @@ debug_container.log
 /.env
 simapp/simd/xyrad
 xyra-network-v2.tar.gz
+xyra-network-v2.tar.gz
+simapp/simd/xyrad
