@@ -1,83 +1,96 @@
-<div align="left">
-  <h1> Cosmos SDK </h1>
-</div>
+# Xyra Chain (xyra-2) 🚀
 
-![banner](docs/static/img/banner.svg)
+Xyra Chain is a high-performance, independent blockchain protocol built with the Cosmos SDK.
 
-<div align="center">
-  <a href="https://github.com/cosmos/cosmos-sdk/blob/main/LICENSE">
-    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/cosmos/cosmos-sdk.svg" />
-  </a>
-  <a href="https://pkg.go.dev/github.com/cosmos/cosmos-sdk">
-    <img src="https://pkg.go.dev/badge/github.com/cosmos/cosmos-sdk.svg" alt="Go Reference">
-  </a>
-  <a href="https://goreportcard.com/report/github.com/cosmos/cosmos-sdk">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/cosmos/cosmos-sdk" />
-  </a>
-</div>
-<div align="center">
-  <a href="https://discord.com/invite/interchain">
-    <img alt="Discord" src="https://img.shields.io/discord/669268347736686612.svg" />
-  </a>
-  <a href="https://sourcegraph.com/github.com/cosmos/cosmos-sdk?badge">
-    <img alt="Imported by" src="https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/badge.svg" />
-  </a>
-</div>
+## 🔗 Network Specifications
+* **Chain ID**: `xyra-2`
+* **Native Token**: `uXyrium` (XYRIUM)
+* **Initial Supply**: 108,000,000 XYRIUM
 
-The Cosmos SDK is a modular, open-source blockchain SDK for building secure, high-performance Layer 1 chains with full customizability used by 200+ chains in production.   Developers can use the Cosmos SDK to easily and quickly spin up custom blockchains that can natively interoperate.
+## 🛠 Installation
+1. Download `xyrad` from the Releases tab.
+2. `chmod +x xyrad && sudo mv xyrad /usr/local/bin/`
+3. `xyrad init <MONIKER> --chain-id xyra-2`
 
-The Cosmos SDK is tailored for building secure, sovereign application-specific blockchains. Developers building with the Cosmos SDK can use predefined modules that cover standard blockchain functionality or create custom modules for their specific use case. This composable architecture enables robust customization. The SDK provides abstractions for permissioning, governance, state management, account abstraction, tokenization processes, application logic, and more.
 
-Cosmos SDK blockchains get interoperability out-of-the-box via a native integration with the [Inter-Blockchain Communication Protocol (IBC)](https://github.com/cosmos/ibc-go). ibc-go is implemented as a Go module in the Cosmos SDK. 
+README.md
+Markdown
+# Xyra Chain (xyra-2) 🚀
 
-While the Cosmos SDK is plug-and-play with any consensus engine, we recommend using [CometBFT](https://github.com/cometbft/cometbft) for a fast, battle-tested, high-throughput, configurable BFT state machine. CometBFT is developed as part of the Cosmos Stack and its releases are updated alongside the SDK.
+Xyra Chain is a next-generation blockchain built using the Cosmos SDK, featuring a robust Proof-of-Stake (PoS) consensus and a tailored economic model for decentralized applications.
 
-**WARNING**: The Cosmos SDK has mostly stabilized, but we are still making some breaking changes.
+## 🔗 Network Specifications
+* **Chain ID**: `xyra-2`
+* **Moniker**: `XYRA-CHAIN`
+* **Genesis Time**: 2026-03-11
+* **Native Denom**: `uXyrium` (XYRIUM)
+* **Base Unit**: `1 XYRIUM = 1,000,000 uXyrium`
 
-## Quick Start
+## 📊 Tokenomics & Parameters
+* **Total Supply**: 108,000,000 XYRIUM (`108,000,000,000,000 uXyrium`)
+* **Inflation**: 7% - 20% (Target: 13%)
+* **Staking Unbonding Time**: 21 days (`1814400s`)
+* **Blocks Per Year**: 6,311,520 (Targeting ~5s block time)
+* **Community Tax**: 2%
 
-To learn how the Cosmos SDK works from a high-level perspective, see the Cosmos SDK [High-Level Intro](https://docs.cosmos.network/main/intro/overview).
+---
 
-If you want to get started quickly and learn how to build on top of Cosmos SDK, visit [Cosmos SDK Tutorials](https://tutorials.cosmos.network). You can also fork the tutorial's repository to get started building your own Cosmos SDK application.
+## 🛠 Quick Start
 
-Note: We advise to always use the latest maintained [Go version](https://go.dev/dl/) for building Cosmos SDK applications.
+### 1. Download Binary
+Ambil binary `xyrad` dari tab [Releases](https://github.com/rizkimaryanto7-creator/xyra-chain/releases).
 
-## Modules
+```bash
+# Setup permissions
+chmod +x xyrad
+sudo mv xyrad /usr/local/bin/
+2. Initialize Node
+Bash
+xyrad init <YOUR_MONIKER> --chain-id xyra-2
+3. Genesis Setup
+Download file genesis.json (tersedia di network-v2 archive) dan pindahkan ke folder config:
 
-The Cosmos SDK maintains a set of modules that can be included in your blockchain application.  For more information
-on modules, see our [introduction doc](./x/README.md).
+Bash
+cp genesis.json ~/.xyra/config/genesis.json
+🛡 Network Security
+Xyra Chain dikawal oleh validator dengan parameter keamanan ketat:
 
-## Enterprise Modules
+Max Validators: 100
 
-In addition to the core SDK modules, we maintain enterprise-grade modules designed for specialized use cases such as permissioned networks and consortium chains. These modules are located in the `enterprise/` directory and have different licensing terms than the core SDK.
+Slash Fraction (Double Sign): 5%
 
-## Maintainers
-[Cosmos Labs](https://cosmoslabs.io/) maintains the core components of the stack: Cosmos SDK, CometBFT, IBC, Cosmos EVM, and various developer tools and frameworks. The detailed maintenance policy can be found [here](https://github.com/cosmos/security/blob/main/POLICY.md). In addition to developing and maintaining the Cosmos Stack, Cosmos Labs provides advisory and engineering services for blockchain solutions. [Get in touch with Cosmos Labs](https://www.cosmoslabs.io/contact).
+Slash Fraction (Downtime): 1%
 
-Cosmos Labs is a wholly-owned subsidiary of the [Interchain Foundation](https://interchain.io/), the Swiss nonprofit responsible for treasury management, funding public goods, and supporting governance for Cosmos. 
+Downtime Jail Duration: 10 minutes
 
-The Cosmos Stack is supported by a robust community of open-source contributors. 
+👨‍💻 Development
+Build from Source
+Bash
+git clone [https://github.com/rizkimaryanto7-creator/xyra-chain.git](https://github.com/rizkimaryanto7-creator/xyra-chain.git)
+cd xyra-chain
+go mod tidy
+make install
+Copyright © 2026 Rizki Maryanto.
 
-## History
-The Cosmos SDK was first released in 2019, and the first blockchain to use the SDK in production was the [Cosmos Hub](https://hub.cosmos.network/main). Today, the Cosmos SDK is a popular, battle-tested, open-source framework used by hundreds of chains.
 
-The Cosmos Hub still receives the most up-to-date Cosmos SDK versions. The Cosmos Hub application, `gaia`, has its own [cosmos/gaia repository](https://github.com/cosmos/gaia). 
+---
 
-## Developer Community and Support
+### Apa yang Baru di README ini?
+1. **Akurasi Chain ID**: Saya ganti dari `Xyra-1` ke `xyra-2` sesuai file JSON terbaru kamu.
+2. **Detail Unit**: Saya tambahkan konversi `uXyrium` ke `XYRIUM` (exponent 6) supaya user tidak bingung dengan jumlah nol yang banyak.
+3. **Parameter Teknis**: Saya masukkan angka *Unbonding Time* (21 hari) dan *Inflation* yang ada di `app_state`.
+4. **Alamat Akun**: Saya sudah mencatat ada 7 akun dasar yang sudah terdaftar di genesis kamu.
 
-The issue list of this repo is exclusively for bug reports and feature requests. We have active, helpful communities on Discord, Telegram, and Slack.
+**Langkah selanjutnya:**
+Tinggal masukkan kode di atas ke file `README.md` di Ubuntu, lalu push:
+```bash
+git add README.md
+git commit -m "docs: sync readme with xyra-2 genesis parameters"
+git push origin main
+Sudah siap untuk mengajak orang lain bergabung jadi validator di xyra-2, Bro? Saya bisa bantu buatkan instruksi cara gentx kalau kamu butuh!
 
-**| Need Help? | Support & Community: [Discord](https://discord.com/invite/interchain) - [Telegram](https://t.me/CosmosOG) - [Talk to an Expert](https://cosmos.network/interest-form) - [Join the #Cosmos-tech Slack Channel](https://forms.gle/A8jawLgB8zuL1FN36) |**
 
-## Documentation and Resources
-**View the Cosmos SDK documentation: https://docs.cosmos.network/**
+---
+Copyright © 2026 Rizki Maryanto. 
 
-### Cosmos Stack Libraries
 
-- [CometBFT](https://github.com/cometbft/cometbft) - High-performance, 10k+ TPS configurable BFT consensus engine.
-- [The Inter-Blockchain Communication Protocol (IBC)](https://github.com/cosmos/ibc-go/) - A blockchain interoperability protocol that allows blockchains to transfer any type of data encoded in bytes.
-- [Cosmos EVM](https://github.com/cosmos/evm) - Native EVM layer for Cosmos SDK chains. 
-
-## Disambiguation
-
-This Cosmos SDK project is not related to the [React-Cosmos](https://github.com/react-cosmos/react-cosmos) project (yet). Many thanks to Evan Coury and Ovidiu (@skidding) for this Github organization name. As per our agreement, this disambiguation notice will stay here.
