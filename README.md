@@ -1,97 +1,241 @@
-# Xyra Chain (xyra-2) 🚀
+Xyra Chain (xyra-2) 🚀
 
-Xyra Chain is a high-performance, independent blockchain protocol built with the Cosmos SDK.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rizkimaryanto7-creator/xyra-chain/main/assets/xyra-logo.png" width="160"/>
+</p><p align="center">
+Next-generation blockchain powered by Proof-of-Stake consensus.
+</p><p align="center">
+<a href="https://github.com/rizkimaryanto7-creator/xyra-chain/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/rizkimaryanto7-creator/xyra-chain/ci.yml?branch=main">
+</a>
+<a href="https://github.com/rizkimaryanto7-creator/xyra-chain/releases">
+<img src="https://img.shields.io/github/v/release/rizkimaryanto7-creator/xyra-chain">
+</a>
+<a href="#">
+<img src="https://img.shields.io/badge/network-mainnet-blue">
+</a>
+</p>---
 
-## 🔗 Network Specifications
-* **Chain ID**: `xyra-2`
-* **Native Token**: `uXyrium` (XYRIUM)
-* **Initial Supply**: 108,000,000 XYRIUM
+🌌 Overview
 
-## 🛠 Installation
-1. Download `xyrad` from the Releases tab.
-2. `chmod +x xyrad && sudo mv xyrad /usr/local/bin/`
-3. `xyrad init <MONIKER> --chain-id xyra-2`
+Xyra Chain is a decentralized blockchain designed for scalable digital assets and decentralized applications (dApps).
 
+Built using the Cosmos SDK, Xyra leverages Proof-of-Stake (PoS) consensus to provide high performance, energy efficiency, and strong network security.
 
-README.md
-Markdown
-# Xyra Chain (xyra-2) 🚀
+The network is powered by the native token XYRIUM, which is used for:
 
-Xyra Chain is a next-generation blockchain built using the Cosmos SDK, featuring a robust Proof-of-Stake (PoS) consensus and a tailored economic model for decentralized applications.
-
-## 🔗 Network Specifications
-* **Chain ID**: `xyra-2`
-* **Moniker**: `XYRA-CHAIN`
-* **Genesis Time**: 2026-03-11
-* **Native Denom**: `uXyrium` (XYRIUM)
-* **Base Unit**: `1 XYRIUM = 1,000,000 uXyrium`
-
-## 📊 Tokenomics & Parameters
-* **Total Supply**: 108,000,000 XYRIUM (`108,000,000,000,000 uXyrium`)
-* **Inflation**: 7% - 20% (Target: 13%)
-* **Staking Unbonding Time**: 21 days (`1814400s`)
-* **Blocks Per Year**: 6,311,520 (Targeting ~5s block time)
-* **Community Tax**: 2%
+- transaction fees
+- staking and validator security
+- governance
+- decentralized applications
 
 ---
 
-## 🛠 Quick Start
+🌐 Network Information
 
-### 1. Download Binary
-get binary `xyrad` from tab [Releases](https://github.com/rizkimaryanto7-creator/xyra-chain/releases).
+Parameter| Value
+Network| Xyra Mainnet
+Chain ID| "xyra-2"
+Consensus| Proof-of-Stake
+Block Time| ~5 seconds
+Genesis Date| 2026-03-11
+Max Validators| 100
 
-```bash
-# Setup permissions
+---
+
+💰 Token Information
+
+Property| Value
+Token Name| Xyrium
+Symbol| XYRIUM
+Base Denomination| "uXyrium"
+Conversion| 1 XYRIUM = 1,000,000 uXyrium
+Total Supply| 108,000,000 XYRIUM
+
+---
+
+📊 Economic Parameters
+
+Parameter| Value
+Inflation Range| 7% – 20%
+Target Inflation| 13%
+Community Tax| 2%
+Unbonding Time| 21 days
+Blocks Per Year| 6,311,520
+
+---
+
+🌍 Public Network Endpoints
+
+Service| Endpoint
+RPC| https://rpc.xyra.network
+REST API| https://api.xyra.network
+gRPC| grpc.xyra.network:9090
+Explorer| https://explorer.xyra.network
+
+---
+
+🌱 Seed Nodes
+
+Seed nodes help new nodes discover peers in the network.
+
+seed1@seed.xyra.network:26656
+seed2@seed.xyra.network:26656
+
+Add them to:
+
+~/.xyra/config/config.toml
+
+---
+
+🔗 Persistent Peers
+
+peer1@node.xyra.network:26656
+peer2@node.xyra.network:26656
+
+---
+
+🛠 Quick Start
+
+1️⃣ Download Binary
+
+Download the latest binary from:
+
+https://github.com/rizkimaryanto7-creator/xyra-chain/releases
+
+Install:
+
 chmod +x xyrad
 sudo mv xyrad /usr/local/bin/
-2. Initialize Node
-Bash
+
+Verify:
+
+xyrad version
+
+---
+
+⚙ Node Initialization
+
+Initialize a node:
+
 xyrad init <YOUR_MONIKER> --chain-id xyra-2
-3. Genesis Setup
-Download file genesis.json (tersedia di network-v2 archive) dan pindahkan ke folder config:
 
-Bash
+---
+
+📦 Genesis Setup
+
+Download the official "genesis.json".
+
+Place it in the configuration folder:
+
 cp genesis.json ~/.xyra/config/genesis.json
-🛡 Network Security
-Xyra Chain dikawal oleh validator dengan parameter keamanan ketat:
 
-Max Validators: 100
+---
 
-Slash Fraction (Double Sign): 5%
+🚀 Start Node
 
-Slash Fraction (Downtime): 1%
+xyrad start
 
-Downtime Jail Duration: 10 minutes
+Your node will begin syncing with the Xyra network.
+
+---
+
+🛡 Become a Validator
+
+Create wallet:
+
+xyrad keys add validator
+
+Check address:
+
+xyrad keys show validator -a
+
+Create validator:
+
+xyrad tx staking create-validator \
+--amount=1000000uXyrium \
+--pubkey=$(xyrad tendermint show-validator) \
+--moniker="<YOUR_MONIKER>" \
+--chain-id=xyra-2 \
+--commission-rate="0.10" \
+--commission-max-rate="0.20" \
+--commission-max-change-rate="0.01" \
+--min-self-delegation="1" \
+--from=validator
+
+---
+
+🔐 Network Security
+
+Parameter| Value
+Max Validators| 100
+Slash (Double Sign)| 5%
+Slash (Downtime)| 1%
+Downtime Jail Duration| 10 minutes
+
+---
 
 👨‍💻 Development
-Build from Source
-Bash
-git clone [https://github.com/rizkimaryanto7-creator/xyra-chain.git](https://github.com/rizkimaryanto7-creator/xyra-chain.git)
+
+Clone repository:
+
+git clone https://github.com/rizkimaryanto7-creator/xyra-chain.git
 cd xyra-chain
+
+Install dependencies:
+
 go mod tidy
+
+Build binary:
+
 make install
-Copyright © 2026 Rizki Maryanto.
 
+Check version:
+
+xyrad version
+
+---
+
+📂 Project Structure
+
+xyra-chain
+│
+├── app/                # Blockchain application logic
+├── cmd/xyrad           # Main binary entry point
+├── proto/              # Protobuf definitions
+├── x/                  # Cosmos modules
+│
+├── scripts/            # Utility scripts
+├── docs/               # Documentation
+│
+└── .github/
+    └── workflows/      # CI/CD pipelines
 
 ---
 
-### What’s New in This README?
-Chain ID Accuracy: I changed it from Xyra-1 to xyra-2 to match we latest JSON file.
-Unit Details: I added the conversion from uXyrium to XYRIUM (exponent 6) so users won’t be confused by the large number of zeros.
-Technical Parameters: I included the Unbonding Time (21 days) and Inflation values found in app_state.
-Account Addresses: I noted that there are already 7 base accounts registered in your genesis.
-Next Step:
-Just insert the code above into the README.md file in Ubuntu, then push it:
+🤝 Contributing
 
-Bash:
+Contributions are welcome.
 
-git add README.md
-git commit -m "docs: sync readme with xyra-2 genesis parameters"
-git push origin main
+Steps:
 
-After that, it will be ready to invite others to join as validators on xyra-2.
+1. Fork repository
+2. Create new branch
+3. Commit changes
+4. Submit pull request
 
 ---
-Copyright © 2026 Rizki Maryanto. 
 
+📜 License
 
+This project is open-source and released under the MIT License.
+
+---
+
+👤 Author
+
+Created and maintained by Rizki Maryanto
+
+---
+
+© 2026 Rizki Maryanto
