@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	DefaultKeyringServiceName = "cosmos"
+	DefaultKeyringServiceName = "xyra"
 	EnvConfigScope            = "COSMOS_SDK_CONFIG_SCOPE"
 )
 

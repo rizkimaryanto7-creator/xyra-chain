@@ -44,8 +44,8 @@ func NewRootCmd() *cobra.Command {
 		WithViper("") // uses by default the binary name as prefix
 
 	rootCmd := &cobra.Command{
-		Use:           "simd",
-		Short:         "simulation app",
+		Use:           "xyrad",
+		Short:         "XYRA blockchain daemon",
 		SilenceErrors: true,
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			// set the default command outputs

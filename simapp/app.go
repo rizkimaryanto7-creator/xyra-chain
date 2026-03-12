@@ -96,7 +96,7 @@ import (
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 )
 
-const appName = "SimApp"
+const appName = "XYRA"
 
 var (
 	// DefaultNodeHome default home directories for the application daemon
@@ -163,8 +163,17 @@ type SimApp struct {
 }
 
 func init() {
-	var err error
-	DefaultNodeHome, err = clienthelpers.GetNodeHomeDirectory(".simapp")
+
+    config := sdk.GetConfig()
+
+    config.SetBech32PrefixForAccount("xyra", "xyrapub")
+    config.SetBech32PrefixForValidator("xyravaloper", "xyravaloperpub")
+    config.SetBech32PrefixForConsensusNode("xyravalcons", "xyravalconspub")
+
+    config.Seal()
+
+    var err error
+    DefaultNodeHome, err = clienthelpers.GetNodeHomeDirectory(".xyra")
 	if err != nil {
 		panic(err)
 	}
@@ -282,15 +291,15 @@ func NewSimApp(
 
 	// add keepers
 	app.AccountKeeper = authkeeper.NewAccountKeeper(
-		appCodec,
-		runtime.NewKVStoreService(keys[authtypes.StoreKey]),
-		authtypes.ProtoBaseAccount,
-		maccPerms,
-		authcodec.NewBech32Codec(sdk.Bech32MainPrefix),
-		sdk.Bech32MainPrefix,
-		authtypes.NewModuleAddress(govtypes.ModuleName).String(),
-		authkeeper.WithUnorderedTransactions(true),
-	)
+    appCodec,
+    runtime.NewKVStoreService(keys[authtypes.StoreKey]),
+    authtypes.ProtoBaseAccount,
+    maccPerms,
+    authcodec.NewBech32Codec("xyra"),
+    "xyra",
+    authtypes.NewModuleAddress(govtypes.ModuleName).String(),
+    authkeeper.WithUnorderedTransactions(true),
+)
 
 	app.BankKeeper = bankkeeper.NewBaseKeeper(
 		appCodec,

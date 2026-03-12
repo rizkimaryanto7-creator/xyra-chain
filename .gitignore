@@ -69,3 +69,5 @@ debug_container.log
 /x/genutil/data/priv_validator_state.json
 /.envrc
 /.env
+simapp/simd/xyrad
+xyra-network-v2.tar.gz
