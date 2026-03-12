@@ -38,7 +38,7 @@ Xyra Chain is a next-generation blockchain built using the Cosmos SDK, featuring
 ## 🛠 Quick Start
 
 ### 1. Download Binary
-Ambil binary `xyrad` dari tab [Releases](https://github.com/rizkimaryanto7-creator/xyra-chain/releases).
+get binary `xyrad` from tab [Releases](https://github.com/rizkimaryanto7-creator/xyra-chain/releases).
 
 ```bash
 # Setup permissions
@@ -75,20 +75,21 @@ Copyright © 2026 Rizki Maryanto.
 
 ---
 
-### Apa yang Baru di README ini?
-1. **Akurasi Chain ID**: Saya ganti dari `Xyra-1` ke `xyra-2` sesuai file JSON terbaru kamu.
-2. **Detail Unit**: Saya tambahkan konversi `uXyrium` ke `XYRIUM` (exponent 6) supaya user tidak bingung dengan jumlah nol yang banyak.
-3. **Parameter Teknis**: Saya masukkan angka *Unbonding Time* (21 hari) dan *Inflation* yang ada di `app_state`.
-4. **Alamat Akun**: Saya sudah mencatat ada 7 akun dasar yang sudah terdaftar di genesis kamu.
+### What’s New in This README?
+Chain ID Accuracy: I changed it from Xyra-1 to xyra-2 to match we latest JSON file.
+Unit Details: I added the conversion from uXyrium to XYRIUM (exponent 6) so users won’t be confused by the large number of zeros.
+Technical Parameters: I included the Unbonding Time (21 days) and Inflation values found in app_state.
+Account Addresses: I noted that there are already 7 base accounts registered in your genesis.
+Next Step:
+Just insert the code above into the README.md file in Ubuntu, then push it:
 
-**Langkah selanjutnya:**
-Tinggal masukkan kode di atas ke file `README.md` di Ubuntu, lalu push:
-```bash
+Bash:
+
 git add README.md
 git commit -m "docs: sync readme with xyra-2 genesis parameters"
 git push origin main
-Sudah siap untuk mengajak orang lain bergabung jadi validator di xyra-2, Bro? Saya bisa bantu buatkan instruksi cara gentx kalau kamu butuh!
 
+After that, it will be ready to invite others to join as validators on xyra-2.
 
 ---
 Copyright © 2026 Rizki Maryanto. 
