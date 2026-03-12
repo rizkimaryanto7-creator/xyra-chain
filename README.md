@@ -3,7 +3,8 @@ Xyra Chain (xyra-2) 🚀
 <p align="center">
   <img src="https://raw.githubusercontent.com/rizkimaryanto7-creator/xyra-chain/main/assets/xyra-logo.png" width="160"/>
 </p><p align="center">
-Next-generation blockchain powered by Proof-of-Stake consensus.
+Next-generation blockchain powered by Proof-of-Stake consensus. 
+This blockchain is focused on intensive communities
 </p><p align="center">
 <a href="https://github.com/rizkimaryanto7-creator/xyra-chain/actions">
 <img src="https://img.shields.io/github/actions/workflow/status/rizkimaryanto7-creator/xyra-chain/ci.yml?branch=main">
