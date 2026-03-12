@@ -69,10 +69,10 @@ Blocks Per Year| 6,311,520
 🌍 Public Network Endpoints
 
 Service| Endpoint
-RPC| https://rpc.xyra.network
-REST API| https://api.xyra.network
-gRPC| grpc.xyra.network:9090
-Explorer| https://explorer.xyra.network
+RPC| https://rpc.xyra-mainnet.org
+REST API| https://api.xyra-mainnet.org
+gRPC| grpc.xyra-mainnet:9090
+Explorer| https://www.xyra-mainnet.org
 
 ---
 
@@ -80,8 +80,8 @@ Explorer| https://explorer.xyra.network
 
 Seed nodes help new nodes discover peers in the network.
 
-seed1@seed.xyra.network:26656
-seed2@seed.xyra.network:26656
+seed1@seed.xyra-mainnet.org:26656
+seed2@seed.xyra-mainnet.org:26656
 
 Add them to:
 
@@ -91,8 +91,8 @@ Add them to:
 
 🔗 Persistent Peers
 
-peer1@node.xyra.network:26656
-peer2@node.xyra.network:26656
+peer1@node.xyra-mainnet.org:26656
+peer2@node.xyra-mainnet.org:26656
 
 ---
 
