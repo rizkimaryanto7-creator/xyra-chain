@@ -1,4 +1,4 @@
-Xyra Chain (xyra-2) 🚀
+#Xyra Chain (xyra-2) 🚀#
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/rizkimaryanto7-creator/xyra-chain/main/assets/xyra-logo.png" width="160"/>
