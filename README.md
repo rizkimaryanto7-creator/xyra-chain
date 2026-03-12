@@ -228,13 +228,13 @@ Steps:
 
 📜 License
 
-This project is open-source and released under the MIT License.
+This project is open-source and released under the License from cosmos sdk.
 
 ---
 
 👤 Author
 
-Created and maintained by Rizki Maryanto
+Created and maintained by Rizkimaryanto7-creator 
 
 ---
 
