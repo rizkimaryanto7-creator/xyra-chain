@@ -111,7 +111,7 @@ sudo mv xyrad /usr/local/bin/
 
 Verify:
 
-xyrad version
+xyrad version --long
 
 ---
 
