@@ -74,6 +74,7 @@ REST API| https://api.xyra-mainnet.org
 gRPC| grpc.xyra-mainnet:9090
 website| https://www.xyra-mainnet.org
 Explorer| https://www.explorer.xyra-mainnet.org
+
 ---
 
 🌱 Seed Nodes
