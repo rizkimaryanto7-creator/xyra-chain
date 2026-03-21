@@ -6,7 +6,7 @@ Xyra Chain (xyra-2) 🚀
 Next-generation blockchain powered by Proof-of-Stake consensus. 
 This blockchain is focused on intensive communities
 </p><p align="center">
-<a href="https://github.com/rizkimaryanto7-creator/xyra-chain/actions">
+<a href="https://github.com/rizkimaryanto7-creator/xyra-chain/actions/workflows/docker.yml">
 <img src="https://img.shields.io/github/actions/workflow/status/rizkimaryanto7-creator/xyra-chain/ci.yml?branch=main">
 </a>
 <a href="https://github.com/rizkimaryanto7-creator/xyra-chain/releases">
