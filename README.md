@@ -80,8 +80,8 @@ Explorer| https://www.xyra-mainnet.org
 
 Seed nodes help new nodes discover peers in the network.
 
-seed1@seed.xyra-mainnet.org:26656
-seed2@seed.xyra-mainnet.org:26656
+9b9f09a507ce82beedd8fc200bc19a9534d3aadf@31.97.75.83:26656
+b1577b70e4b30ba2f850e35cbccc0c0199edf77e@72.62.121.184:26656
 
 Add them to:
 
@@ -91,8 +91,8 @@ Add them to:
 
 🔗 Persistent Peers
 
-peer1@node.xyra-mainnet.org:26656
-peer2@node.xyra-mainnet.org:26656
+9b9f09a507ce82beedd8fc200bc19a9534d3aadf@31.97.75.83:26656
+b1577b70e4b30ba2f850e35cbccc0c0199edf77e@72.62.121.184:26656
 
 ---
 
@@ -172,7 +172,7 @@ Parameter| Value
 Max Validators| 100
 Slash (Double Sign)| 5%
 Slash (Downtime)| 1%
-Downtime Jail Duration| 10 minutes
+Downtime Jail Duration| 5 minutes
 
 ---
 
@@ -193,7 +193,7 @@ make install
 
 Check version:
 
-xyrad version
+xyrad version --long
 
 ---
 
