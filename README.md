@@ -234,6 +234,8 @@ This project is open-source and released under the License from cosmos sdk.
 
 ---
 
+📜 Official Documentation: Read our full Technical Whitepaper to understand Xyra's 108M Tokenomics and CometBFT Architecture.
+
 👤 Author
 
 Created and maintained by Rizkimaryanto7-creator 
