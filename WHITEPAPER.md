@@ -97,7 +97,7 @@ The distribution of 108 Million XYRA tokens is strategically designed to balance
 | **Community & Ecosystem** | 40,000,000 | 37.04% | Airdrops, Staking Rewards, & Community Pool. |
 | **Fundraiser & Partners** | 40,000,000 | 37.04% | Research funding, strategic partnerships, & institutional adoption. |
 | **Liquidity Provision** | 12,000,000 | 11.11% | Initial liquidity for DEXs (Osmosis) & major CEXs. |
-| **Developer Core Team** | 10,000,000 | 9.26% | Long-term protocol development incentives (Xyra Labs). |
+| **Developer Core Team** | 10,000,000 | 9.26% | Long-term protocol development incentives (Xyra Team). |
 | **Core Validator Support** | 6,000,000 | 5.55% | Operational grants for the 3 anchor validators. |
 
 **Reward Distribution Logic:**
