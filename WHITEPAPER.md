@@ -1,7 +1,7 @@
 # THE XYRA CHAIN (xyra-2) PROTOCOL
 ## A Sovereign Multi-Chain Infrastructure for Global Scalability and Decentralized Autonomy
 
-**Document Status:** Official Technical Release (v2.6)
+**Document Status:** Official Technical Release (v1.2.0)
 **Network ID:** xyra-2
 **Native Asset:** Xyrium (XYRA)
 **Core Architect:** Rizki Maryanto
@@ -10,7 +10,7 @@
 ---
 
 ## 1. EXECUTIVE SUMMARY
-Xyra Chain is a high-performance Layer-1 blockchain protocol engineered to bridge the gap between application sovereignty and shared security. Leveraging the Cosmos SDK and the CometBFT consensus engine, Xyra-2 introduces a sovereign architecture that enables instant finality, near-zero gas fees, and seamless cross-chain interoperability. The protocol’s vision is to establish the foundation for the future internet economy through equitable token distribution and resilient node infrastructure.
+Xyra Chain is a high-performance Layer-1 blockchain protocol engineered to bridge the gap between application sovereignty and shared security. Leveraging the Cosmos SDK and the CometBFT consensus engine, Chain id : Xyra-2 introduces a sovereign architecture that enables instant finality, near-zero gas fees, and seamless cross-chain interoperability. The protocol’s vision is to establish the foundation for the future internet economy through equitable token distribution and resilient node infrastructure.
 
 ---
 
@@ -41,7 +41,7 @@ To safeguard the 108M XYRA economic integrity, Xyra-2 implements strict automate
 #### A. Liveness Fault (Downtime Slashing)
 Validators are required to maintain high node uptime. Failure to sign blocks within a specific window triggers:
 * **Threshold:** Missing more than 50% of blocks within the last 10,000 blocks (sliding window).
-* **Penalty:** A 0.01% deduction from the total staked balance.
+* **Penalty:** A 1% deduction from the total staked balance.
 * **Jailing:** The validator is removed from the active set (Jailed) for a minimum of 10 minutes and must manually submit an `unjail` transaction after resolving technical issues.
 
 #### B. Double-Sign Fault (Equivocation Slashing)
@@ -118,7 +118,7 @@ Every XYRA token holder is an owner of the network, possessing voting power prop
 4. **Automatic Execution:** For technical parameter changes, the protocol code executes the update automatically upon approval without manual intervention.
 
 ### 7.2 Ultra-Low Gas Economy
-Xyra-2 adopts a highly competitive gas fee structure. This enables innovations previously unfeasible on legacy networks, such as micro-payment streaming, mass-scale on-chain gaming, and high-frequency DeFi.
+Xyra-Chain adopts a highly competitive gas fee structure. This enables innovations previously unfeasible on legacy networks, such as micro-payment streaming, mass-scale on-chain gaming, and high-frequency DeFi.
 
 ---
 
@@ -127,17 +127,21 @@ Xyra-2 adopts a highly competitive gas fee structure. This enables innovations p
 ### Phase 1: Genesis Initiation (Q1-Q2 2026) - [COMPLETED]
 * Launch of the `xyra-2` genesis block.
 * Official integration into the **Cosmos Chain Registry**.
+* Official integration into the **Keplr Wallet Registry**.
+* Launch of **Xyra Explorer v1** featuring deep-state analysis.
 * Stabilization of public gRPC/RPC/API infrastructure.
 
 ### Phase 2: Interchain Expansion (Q3-Q4 2026)
 * Activation of IBC Relayers to major networks (Cosmos Hub, Osmosis, Celestia).
-* Launch of **Xyra Explorer v2** featuring deep-state analysis.
+* Official integration into the **Ping.pub Registry**.
+* Official integration into the **Mintscan.io Registry**.
 * Developer Grant Program to catalyze dApp ecosystem growth.
+* Launch of **Xyra DEX** as the primary liquidity hub for native XYRA assets.
 
 ### Phase 3: Smart Contract & EVM Bridge (2027+)
 * **CosmWasm** integration for secure, modular smart contract execution.
 * Construction of the official **Bridge** to EVM ecosystems (Ethereum & Binance Smart Chain).
-* Launch of **Xyra DEX** as the primary liquidity hub for native XYRA assets.
+* Launch of **Xyra Explorer v2** featuring deep-state analysis.
 
 ---
 
