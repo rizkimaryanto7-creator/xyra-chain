@@ -4,7 +4,7 @@
 **Document Status:** Official Technical Release (v1.2.0)
 **Network ID:** xyra-2
 **Native Asset:** Xyrium (XYRA)
-**Core Architect:** XYRA TEAM
+**Core Architect:** XYRA Team (Rizki Maryanto)
 **Year:** 2026
 
 ---
