@@ -2,9 +2,9 @@
 ## A Sovereign Multi-Chain Infrastructure for Global Scalability and Decentralized Autonomy
 
 **Document Status:** Official Technical Release (v1.2.0)
-**Network ID:** xyra-2
+**Chain ID:** xyra-2
 **Native Asset:** Xyrium (XYRA)
-**Core Architect:** XYRA Team (Rizki Maryanto)
+**Core Architect:** Rizki Maryanto
 **Year:** 2026
 
 ---
