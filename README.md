@@ -243,4 +243,4 @@ Created and maintained by Rizkimaryanto7-creator
 
 ---
 
-© 2026 Rizki Maryanto
+© 2026 Rizki Maryanto | email : rizkimaryanto7@gmail.com
