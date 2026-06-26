@@ -1,6 +1,6 @@
 module cosmossdk.io/store
 
-go 1.24.0
+go 1.25
 
 require (
 	cosmossdk.io/errors v1.1.0
@@ -14,7 +14,7 @@ require (
 	github.com/cosmos/iavl v1.2.6
 	github.com/cosmos/ics23/go v0.11.0
 	github.com/hashicorp/go-hclog v1.6.3
-	github.com/hashicorp/go-metrics v0.5.4
+	github.com/hashicorp/go-metrics v0.6.0
 	github.com/hashicorp/go-plugin v1.7.0
 	github.com/hashicorp/golang-lru v1.0.2
 	github.com/stretchr/testify v1.11.1
